@@ -27,7 +27,7 @@ And then remove your keyboard shortcut.
     LCTRL+LSHIFT+S
 
 ## Updates  
-    Fixed endless process loop with single output sink.
+    Fixed endless process loop when used with single output sink.
     A readme.md.
 ## Update Queue:  
     It would be nice if you could put a delay in the command to switch windows. To run the command then pick a window.
