@@ -1,5 +1,5 @@
 # SHUFFLE-PULSEAUDIO-OUTPUT.BASH  
-This is a keyboard shortcut Bash script that allows the user to instantly switch between PulseAudio output audio adapters for the currently active window. No more crashing games to change the audio output to headphones.  
+This Bash script that allows the user to instantly switch between PulseAudio output audio adapters for the currently active window. No more crashing games to change the audio output to headphones.  
 
 ## Requirements  
 Debian with XPROP and PulseAudio.  
@@ -9,12 +9,12 @@ Any types of output audio sinks should work, headphones, speakers, line-out, blu
 ## Installation  
 Just download the ZIP and extract it somewhere, or clone the repository.  
 #### Open the terminal and enter:  
-    sudo git clone https://github.com/Zeph53/PulseAudio-ActiveWindowOutput-Shuffler/
+    git clone https://github.com/Zeph53/PulseAudio-ActiveWindowOutput-Shuffler/
 
 ## Uninstallation  
 To uninstall the script, simply remove the script from your system.  
 #### Open the terminal and enter:  
-    sudo gio trash --force ~/shuffle-pulseaudio-output/
+    gio trash --force ~/shuffle-pulseaudio-output/
 And then remove your keyboard shortcut.  
 
 ## Usage  
