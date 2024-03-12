@@ -1,8 +1,9 @@
 # SHUFFLE-PULSEAUDIO-OUTPUT.BASH  
-This is a Bash script that allows the user to instantly switch between PulseAudio output audio adapters for the currently active window. No more crashing games to change the audio output to headphones.  
+This is a Bash script that allows the user to instantly switch between PulseAudio output audio adapters for the currently active window. No more crashing games to change the audio output to headphones, while an inactive window continues to play background audio.  
 
 ## Requirements  
-Debian with XPROP and PulseAudio.  
+Debian 12+  with XPROP and PulseAudio.  
+It’s possible that XPROP doesn’t work on Wayland and so you need to switch to using X11.  
 Atleast two output audio sinks to shuffle through.  
 Any types of output audio sinks should work, headphones, speakers, line-out, bluetooth, etc..  
 
@@ -38,14 +39,15 @@ Using the "--current" argument instantly selects the currently active window. Pr
     LCTRL+LALT+S
 
 ## Updates  
-    Updated readme.md
+    Updated readme.md again.
+    Updated readme.md.
     The user can now use --current to switch the output sink for the current window. Use with keyboard shortcuts.
-    The user can now do "/path/to/script.bash --next" to switch the audio sink of the next active window.
+    The user can now use --next to switch the audio sink of the next active window.
     Added a --help menu, along with -h alias.
     Fixed endless process loop when used with single output sink.
     A readme.md.
 ## Update Queue:  
-    It would be nice if you could put a delay in the command to switch windows. To run the command then pick a window.
+    It would be nice if you could put a delay in the command to switch windows. To run the command then pick a window. I guess --next should work anyway.
     Put a window title in the command and switch the audio like that.
     Use this script as a wrapper for another command so you dont even need to use the shortcut.
     Shuffle audio output for all windows, with an argument.
