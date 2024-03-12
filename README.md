@@ -1,5 +1,5 @@
 # SHUFFLE-PULSEAUDIO-OUTPUT.BASH  
-This Bash script that allows the user to instantly switch between PulseAudio output audio adapters for the currently active window. No more crashing games to change the audio output to headphones.  
+This is a Bash script that allows the user to instantly switch between PulseAudio output audio adapters for the currently active window. No more crashing games to change the audio output to headphones.  
 
 ## Requirements  
 Debian with XPROP and PulseAudio.  
