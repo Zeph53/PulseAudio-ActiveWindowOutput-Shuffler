@@ -39,7 +39,7 @@ Using the "--current" argument instantly selects the currently active window. Pr
     LCTRL+LALT+S
 
 ## Updates  
-    Improved GETOPTS usage.
+    Improved options parsing.
     Double quotes around all the variables.
     GPLv3.0 license compliance.
     Improved error messages, specifically while using --current.
