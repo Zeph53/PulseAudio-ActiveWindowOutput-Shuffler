@@ -30,31 +30,37 @@ Utilizing the "--next" argument forces the user make active an inactive window, 
     .~/PulseAudio-ActiveWindowOutput-Shuffler/shuffle-pulseaudio-output.bash --current
 Using the "--current" argument instantly selects the currently active window. Presumably a terminal, without audio playing. Allows the user to set the command and it's arguments as a keyboard shortcut, then the user can shuffle the audio output for any active window. Can also be used with a "sleep 3" command preceding it, then the user would manually switch to an inactive window, with audio playing, which then would shuffle to a different output device.  
 
-#### To use a keyboard shortcut with "--current" (-c): Simply assign a keyboard shortcut for your specific desktop environmnet or window manager:  
+#### To use a keyboard shortcut with "--current" (-c): Simply assign a keyboard shortcut for your specific desktop environment or window manager:  
     Access DE/WM settings.  
     Navigate to keyboard settings.  
 #### Enter the following into the command box. Make sure it actually points to the script:  
     "PulseAudio-ActiveWindowOutput-Shuffler/shuffle-pulseaudio-output.bash --current"
-#### Assign a key when prompted, below works for me:  
+#### Assign a key when prompted, below works for me on XFCE4:  
     LCTRL+LALT+S
 
 ## Updates  
-    Updated readme.md again.
-    Updated readme.md.
-    The user can now use --current to switch the output sink for the current window. Use with keyboard shortcuts.
-    The user can now use --next to switch the audio sink of the next active window.
+    Improved GETOPTS usage.
+    Double quotes around all the variables.
+    GPLv3.0 license compliance.
+    Improved error messages, specifically while using --current.
+    Partial rearrange code stack.
+    Can now use --current to switch the output sink for the current window. Use with keyboard shortcuts.
+    Can now use --next to switch the audio sink of the next active window.
     Added a --help menu, along with -h alias.
     Fixed endless process loop when used with single output sink.
     A readme.md.
 ## Update Queue:  
-    It would be nice if you could put a delay in the command to switch windows. To run the command then pick a window. I guess --next should work anyway.
     Put a window title in the command and switch the audio like that.
     Use this script as a wrapper for another command so you dont even need to use the shortcut.
     Shuffle audio output for all windows, with an argument.
-    **Maybe switch the audio output for the NEXT active window, allowing the user to leave the terminal.
-##  
 
+## Disclaimer  
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-
-
-
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
